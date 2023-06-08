@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>Gmail Account Form</title>
+    <style>
+        body{
+    margin: 0%;
+    background-color: rgba(255, 255, 255, 0.548);
+}
+div{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    min-width: 350px;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding-left: 40px;
+}
+input{
+    width: 300px;
+    min-width: 100px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input:focus{
+    outline: none;
+    color: white;
+    background-color: rgba(70, 131, 180, 0.35);
+}
+button{
+    margin: 20px;
+    width: 80px;
+    border-radius: 4px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(175, 102, 243);
+}
+    </style>
+</head>
+<body>
+    <section id="block">
+        <img src="https://images.unsplash.com/photo-1686169505874-633b512546cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"/>
+        <div>
+            <form action="" id="account-form">
+                <h1>Create Gmail Account</h1>
+                
+                <input type="text" title="name" placeholder="Full Name" required>
+                <br>
+                <input type="number" title="contact_no" min="6000000000" max="9999999999" placeholder="Contact Number" required>
+                <br>
+                <input type="email" title="email" placeholder="Enter email id" required>
+                <br>
+                <button form="account-form">Reset</button>
+                <button form="account-form">Submit</button>
+        </form>
+        </div>
+    </section>
+</body>
+</html>

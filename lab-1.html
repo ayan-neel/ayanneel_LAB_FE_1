@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<header>
+    <title>Problem 1</title>
+    <style>
+        body{
+            margin: 0%;
+            height: auto;
+        }
+        #heading{
+            background-color: red;
+            margin: 0;
+            text-align: right;
+            padding-right: 2%;
+        }
+        #navbar{
+            position: sticky;
+            z-index: 1; 
+        }
+        #navbar ul{
+            background-color: rgb(19, 12, 1);
+            margin: 0%;
+            
+            
+        }
+        .nav_items {
+            padding: 3px;
+            display: inline-block;
+            text-align: left;
+        }
+        .nav_items a{
+            color:white;
+            text-align: left;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .nav_subitems{
+            display: none;
+        }
+        .nav_items:hover{
+            background-color: rgb(7, 45, 232);
+        }
+        .nav_items:hover .nav_subitems{
+            display: block;
+        }
+        .dropdown{
+            position: absolute;
+            width: auto;
+            max-width: 150px;
+            padding:0%;
+            top: 26px;
+        }
+        .dropdown li:hover {
+            background-color: blue;
+        }
+    </style>
+</header>
+<body>
+    <h1 id="heading">Demo of Dropdown</h1>
+    <nav id="navbar">
+        <ul>
+            <li class="nav_items">
+                <a href="">Link1</a>
+            </li>
+            <li class="nav_items">
+                <a href="">Link2
+                    <ul class="dropdown">
+                        <li class="nav_subitems"><a href="">DDL_1</a></li>
+                        <li class="nav_subitems"><a href="">DDL_2</a></li>
+                        <li class="nav_subitems"><a href="">DDL_3</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="nav_items">
+                <a href="">Link3
+                    <ul class="dropdown">
+                        <li class="nav_subitems"><a href="">DDL_1</a></li>
+                        <li class="nav_subitems"><a href="">DDL_2</a></li>
+                        <li class="nav_subitems"><a href="">DDL_3</a></li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
